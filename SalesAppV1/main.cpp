@@ -9,7 +9,7 @@
 using namespace std;
 HANDLE cout_handle = GetStdHandle(STD_OUTPUT_HANDLE);
 
-/** ASSISTANT INLINE FUNCTIONS **/
+
 inline void wait_or_clear(unsigned int sec, bool clear_screen = false)
 {
     Sleep(sec*1000);
@@ -27,7 +27,7 @@ inline void print_try_again(){
     wait_or_clear(3, 1);
 }
 
-/** MAIN PRINT MENU FUNCTION **/
+
 int get_menu_choise(string menu, int level = 0)
 {
     stringstream X(menu);
@@ -46,7 +46,7 @@ int get_menu_choise(string menu, int level = 0)
     return c;
 }
 
-/** DATA ENTRY AND SUB MENU **/
+
 void sub_sub_menu_1_product()
 {
     int c = -1;
@@ -158,7 +158,7 @@ void sub_menu_1_data_entry()
     }
 }
 
-/** SALSES AND SUB MENU **/
+
 
 void sub_sub_menu_2_order()
 {
@@ -245,7 +245,7 @@ void sub_menu_2_sales_process()
 }
 
 
-/** PRINTS AND SUB MENU **/
+
 
 void sub_menu_3_prints()
 {
@@ -289,7 +289,7 @@ void sub_menu_3_prints()
     }
 }
 
-/** MAIN FUNCTION **/
+
 int main()
 {
     printline("START APPLICATION ....",1,6);
